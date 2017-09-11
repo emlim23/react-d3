@@ -1,0 +1,66 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: auto;
+  position: relative;
+}
+
+text {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+
+.energy-use-wrap{
+  position: relative;
+}
+form {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.hidden{
+  display: none;
+}
+
+.modal {
+  display: none;
+
+  .modal-body{
+    position: fixed;
+    top: 50px;
+    left: 50%;
+    width: 400px;
+    margin-left: -200px;
+    z-index: 9999;
+    border: 1px solid blue;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 15px;
+  }
+
+  &.open{
+    display: block;
+  }
+
+  .bg{
+    position: fixed;
+    background-color: rgba(0, 0, 0, .3);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9998;
+  }
+}
+
